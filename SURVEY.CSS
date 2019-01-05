@@ -1,0 +1,4 @@
+ul#navigation {list-style:none;position:relative; z-index:2;top:1px;display:table;border-left:1px solid #f5ab36;}
+ul#navigation li {float:left;}
+ul#navigation li a {background:#ffd89b;color:#222;display:block;padding:6px 15px;text-decoration:none;border-right:1px solid #f5ab36;border-top:1px solid #f5ab36;border-right:1px solid #f5ab36;margin:0;}
+ul#navigation li a.selected {border-bottom:1px solid #fff;color:#344385;background:#fff;}

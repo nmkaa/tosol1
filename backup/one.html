@@ -1,0 +1,40 @@
+<script type="text/JavaScript">
+ 
+function confirmDelete(){
+var agree=confirm("Are you sure you want to delete this file?");
+if (agree)
+     return true;
+else
+     return false ;
+}
+</script>
+ 
+ 
+<a href="somefile.php" onClick="return confirmDelete();">Delete File</a>
+
+
+<html>
+<head>
+<title>Url validation using regex</title>
+<script type="text/javascript">
+    function validate() {
+        var url = document.getElementById("url").value;
+        var pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+        if (pattern.test(url)) {
+            alert("Url is valid");
+            return true;
+        } 
+            alert("Url is not valid!");
+            return false;
+
+    }
+</script>
+
+</head>
+<body>
+<h2>Validating Url..</h2>
+Url :
+<input type="text" name="url" id="url" />
+<input type="submit" value="Check" onclick="validate();" />
+</body>
+</html>
